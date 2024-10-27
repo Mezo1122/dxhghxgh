@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معلومات عن الأهلي المصري وريال مدريد</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ffcccc, #ffffff);
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #c8102e; /* لون الأهلي */
+            text-shadow: 1px 1px 2px #000;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        .divider {
+            height: 2px;
+            background-color: #c8102e;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 5px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #c8102e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 16px;
+            color: #555;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌟 معلومات عن النادي الأهلي المصري 🌟</h1>
+        <div class="divider"></div>
+        <div id="ahly-info">
+            <p>النادي الأهلي هو أحد أعرق الأندية في تاريخ كرة القدم. تأسس في عام 1907 وله تاريخ حافل بالبطولات المحلية والدولية.</p>
+            <p>حقق الأهلي العديد من الألقاب، بما في ذلك دوري أبطال أفريقيا، الدوري المصري، وكأس مصر.</p>
+            <p>يلعب النادي الأهلي مبارياته على استاد القاهرة الدولي، ويعتبر من أكبر الأندية في إفريقيا.</p>
+        </div>
+
+        <div id="realmadrid-info" class="hidden">
+            <h2>🏆 معلومات عن ريال مدريد 🏆</h2>
+            <div class="divider"></div>
+            <p>ريال مدريد هو أحد الأندية الأكثر شهرة في العالم، تأسس في عام 1902 ويعتبر من أنجح الأندية في تاريخ كرة القدم.</p>
+            <p>حقق ريال مدريد العديد من الألقاب، بما في ذلك دوري أبطال أوروبا، الدوري الإسباني، وكأس الملك.</p>
+            <p>يلعب النادي مبارياته على ملعب سانتياغو برنابيو، ويعتبر من أكبر الأندية في العالم.</p>
+        </div>
+
+        <div class="divider"></div>
+        <button class="button" onclick="showAhly()">الصفحة الأولى (الأهلي)</button>
+        <button class="button" onclick="showRealMadrid()">الصفحة الثانية (ريال مدريد)</button>
+
+        <footer>
+            <p>مصنوع من قبل مازن</p>
+            <p>صلِّ على النبي ❤️</p>
+        </footer>
+    </div>
+
+    <script>
+        function showAhly() {
+            document.getElementById('ahly-info').classList.remove('hidden');
+            document.getElementById('realmadrid-info').classList.add('hidden');
+        }
+
+        function showRealMadrid() {
+            document.getElementById('ahly-info').classList.add('hidden');
+            document.getElementById('realmadrid-info').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
